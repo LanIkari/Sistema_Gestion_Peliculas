@@ -1,0 +1,36 @@
+<div class="container-fluid">
+    <h1>Actualizar Película</h1>
+    <div class="row">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+            <form action="http://localhost:3000/updateform/{{result._id}}?_method=PUT" method="post">
+                <input type="hidden" class="input-form form-control" name="_id" value="{{result._id}}" required
+                       placeholder="Id">
+                <input type="text" class="input-form form-control" name="titulo" value="{{result.titulo}}" required
+                       placeholder="Título">
+                <input type="text" class="input-form form-control" name="anno" value="{{result.anno}}" required
+                       placeholder="Año">
+                <input type="text" class="input-form form-control" name="genero" value="{{result.genero}}" required
+                       placeholder="Género">
+                <input type="text" class="input-form form-control" name="duracion" value="{{result.duracion}}" required
+                       placeholder="Duración">
+                <textarea type="text" class="input-form form-control" name="sinopsis" required
+                          placeholder="Sinopsis">{{result.sinopsis}}</textarea>
+                <input type="text" class="input-form form-control" name="director" value="{{result.director}}"
+                       placeholder="Director">
+                <input type="text" class="input-form form-control" name="reparto" value="{{result.reparto}}"
+                       placeholder="Reparto">
+                <div class="container-flex-center">
+                    <button class="btn btn-danger" onclick="Cancelar()">Cancelar</button>
+                    <script>
+                        function Cancelar() {
+                            window.location.href = "http://localhost:3000/apiview";
+                        }
+                    </script>
+                    <button type="submit" class="btn btn-primary">Actualizar</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-lg-4"></div>
+    </div>
+</div>
