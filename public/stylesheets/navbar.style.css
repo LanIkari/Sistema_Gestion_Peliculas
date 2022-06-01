@@ -1,0 +1,29 @@
+.titulo {
+    color: black;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 4em !important;
+    text-decoration: none;
+    margin: auto;
+}
+
+.titulo:hover {
+    color: black;
+}
+
+nav {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.nav-link {
+    color: #003f8c;
+    font-size: 1.25em;
+}
+
+.justify-container-center{
+    display: flex;
+    justify-content: center !important;
+    align-content: center !important;
+    flex-direction: row;
+    padding-left: 45%;
+}

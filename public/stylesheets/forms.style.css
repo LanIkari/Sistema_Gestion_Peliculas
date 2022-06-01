@@ -1,0 +1,23 @@
+input {
+    margin: 1rem 0 !important;
+}
+
+textarea {
+    resize: none !important;
+    height: 30vh;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 4rem;
+    color: #003f8c;
+    font-style: italic;
+}
+
+button.btn-primary {
+    background-color: #003f8c;
+}
+
+button.btn-danger {
+    margin-right: 1vw;
+}
