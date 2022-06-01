@@ -3,26 +3,31 @@
     <div class="row">
         <div class="col-lg-4"></div>
         <div class="col-lg-4">
-            <form action="http://localhost:3000/addform" method="post">
-                <input type="text" class="input-form form-control" name="_id" required
+            <form action="http://localhost:3000/updateform/%7B%7Bresult._id%7D%7D?_method=PUT" method="post">
+                <input type="hidden" class="input-form form-control" name="_id" value="{{result._id}}" required
                        placeholder="Id">
-                <input type="text" class="input-form form-control" name="titulo" required
+                <input type="text" class="input-form form-control" name="titulo" value="{{result.titulo}}" required
                        placeholder="Título">
-                <input type="text" class="input-form form-control" name="anno" required
+                <input type="text" class="input-form form-control" name="anno" value="{{result.anno}}" required
                        placeholder="Año">
-                <input type="text" class="input-form form-control" name="genero" required
+                <input type="text" class="input-form form-control" name="genero" value="{{result.genero}}" required
                        placeholder="Género">
-                <input type="text" class="input-form form-control" name="duracion" required
+                <input type="text" class="input-form form-control" name="duracion" value="{{result.duracion}}" required
                        placeholder="Duración">
                 <textarea type="text" class="input-form form-control" name="sinopsis" required
-                          placeholder="Sinopsis"></textarea>
-                <input type="text" class="input-form form-control" name="director"
+                          placeholder="Sinopsis">{{result.sinopsis}}</textarea>
+                <input type="text" class="input-form form-control" name="director" value="{{result.director}}"
                        placeholder="Director">
-                <input type="text" class="input-form form-control" name="reparto"
+                <input type="text" class="input-form form-control" name="reparto" value="{{result.reparto}}"
                        placeholder="Reparto">
                 <div class="container-flex-center">
-                    <button class="btn btn-danger"><a href="apiview" class="a-btn">Cancelar</a></button>
-                    <button type="submit" class="btn btn-primary">Agregar</button>
+                    <button class="btn btn-danger" onclick="Cancelar()">Cancelar</button>
+                    <script>
+                        function Cancelar() {
+                            window.location.href = "http://localhost:3000/";
+                        }
+                    </script>
+                    <button type="submit" class="btn btn-primary">Actualizar</button>
                 </div>
             </form>
         </div>
