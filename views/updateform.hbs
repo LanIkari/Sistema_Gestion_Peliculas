@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col-lg-4"></div>
         <div class="col-lg-4">
-            <form action="http://localhost:3000/updateform/{{result._id}}?_method=PUT" method="post">
+            <form action="http://localhost/updateform/{{result._id}}?_method=PUT" method="post">
                 <input type="hidden" class="input-form form-control" name="_id" value="{{result._id}}" required
                        placeholder="Id">
                 <input type="text" class="input-form form-control" name="titulo" value="{{result.titulo}}" required
@@ -24,7 +24,7 @@
                     <button class="btn btn-danger" onclick="Cancelar()">Cancelar</button>
                     <script>
                         function Cancelar() {
-                            window.location.href = "http://localhost:3000/apiview";
+                            window.location.href = "http://localhost/apiview";
                         }
                     </script>
                     <button type="submit" class="btn btn-primary">Actualizar</button>
