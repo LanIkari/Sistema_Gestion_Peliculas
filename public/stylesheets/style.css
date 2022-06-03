@@ -137,3 +137,16 @@ textarea {
     border-left: none !important;
     border-right: none !important;
 }
+
+@media screen and (orientation: portrait) {
+    div.col-lg-4.center {
+        margin: auto;
+        width: 80%;
+        padding: 1rem;
+    }
+    div.col-lg-4 {
+        margin: auto;
+        width: 8%;
+        padding: 1rem;
+    }
+}
