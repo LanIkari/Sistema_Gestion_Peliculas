@@ -19,7 +19,7 @@ router.delete('/:id', (req, res, next) => {
   });
 });
 
-router.post('/addform', (req, res, next) => {
+router.post('/addform/', (req, res, next) => {
   var route = "/";
   const pelicula = new Peliculas({
       _id: req.body._id,
