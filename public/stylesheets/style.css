@@ -3,103 +3,137 @@
 @import url('apiview.style.css');
 /*Estilos Generales*/
 * {
-  font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: white !important;
 }
 
 body {
-  font: 1em "Lucida Grande", Helvetica, Arial, sans-serif;
+    font: 1em "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: #121212 !important;
 }
 
 .title-nav {
-  font-size: 4em;
-  color: black;
-  text-decoration: none;
-  padding-top: 2%;
+    font-size: 4em;
+    color: black;
+    text-decoration: none;
+    padding-top: 2%;
 }
 
 .title-nav:hover {
-  color: black;
+    color: black;
 }
 
 .container-header {
-  background-color: rgba(142, 209, 252, 0.25);
-  border: none;
-  text-align: center;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  margin-top: 1rem;
-  margin-bottom: 3rem;
+    background-color: rgba(142, 209, 252, 0.25);
+    border: none;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
 }
 
 .text-justify {
-  text-align: justify !important;
+    text-align: justify !important;
 }
 
 .container-flex-center {
-  display: flex !important;
-  justify-content: center;
-  align-content: center;
-  flex-direction: row;
+    display: flex !important;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
 }
 
 .container-flex-end {
-  display: flex !important;
-  justify-content: flex-end;
-  align-content: flex-end;
-  flex-direction: row;
+    display: flex !important;
+    justify-content: flex-end;
+    align-content: flex-end;
+    flex-direction: row;
 }
 
 .container-flex-evenly {
-  display: flex !important;
-  justify-content: space-evenly !important;
-  align-content: center;
-  flex-direction: row;
+    display: flex !important;
+    justify-content: space-evenly !important;
+    align-content: center;
+    flex-direction: row;
 }
 
 div.col-lg-12 {
-  margin: auto;
-  width: 98%;
+    margin: auto;
+    width: 98%;
 }
 
 div.col-lg-10 {
-  margin: auto;
-  width: 80%;
-  padding: 1rem;
+    margin: auto;
+    width: 80%;
+    padding: 1rem;
 }
 
 div.col-lg-8 {
-  margin: auto;
-  width: 65%;
-  padding: 1rem;
+    margin: auto;
+    width: 65%;
+    padding: 1rem;
 }
 
 div.col-lg-6 {
-  margin: auto;
-  width: 48%;
-  padding: 1rem;
+    margin: auto;
+    width: 48%;
+    padding: 1rem;
 }
 
 div.col-lg-4 {
-  margin: auto;
-  width: 30%;
-  padding: 1rem;
+    margin: auto;
+    width: 30%;
+    padding: 1rem;
 }
 
 div.col-lg-3 {
-  margin: auto;
-  width: 23%;
-  padding: 1rem;
+    margin: auto;
+    width: 23%;
+    padding: 1rem;
 }
 
 div.col-lg-2 {
-  margin: auto;
-  width: 14%;
-  padding: 1rem;
+    margin: auto;
+    width: 14%;
+    padding: 1rem;
 }
 
 div.col-lg-1 {
-  margin: auto;
-  width: 8%;
-  padding: 1rem;
+    margin: auto;
+    width: 8%;
+    padding: 1rem;
 }
 
+button.btn {
+    background-color: #888888;
+    border-color: #888888;
+}
+
+button.btn:hover {
+    background-color: #B4B4B4 !important;
+    border-color: #B4B4B4 !important;
+    color: black;
+}
+
+input {
+    margin-bottom: 3rem !important;
+    background-color: transparent !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    outline: none !important;
+}
+
+input:focus {
+    border: none !important;
+    outline: none !important;
+}
+
+textarea {
+    margin-bottom: 3rem !important;
+    background-color: transparent !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+}
