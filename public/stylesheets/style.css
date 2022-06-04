@@ -7,22 +7,22 @@
 }
 
 body {
-  font: 1em "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 1em "Lucida Grande", Helvetica, Arial, sans-serif, color, "white";
 }
 
 .title-nav {
   font-size: 4em;
-  color: black;
+  color: #fffbfb;
   text-decoration: none;
   padding-left: 30%;
 }
 
 .title-nav:hover {
-  color: black;
+  color: #c5c5c5;
 }
 
 .container-header {
-  background-color: rgba(142, 209, 252, 0.25);
+  background-color: rgb(25, 25, 112);
   border: none;
   text-align: center;
   padding-top: 3rem;

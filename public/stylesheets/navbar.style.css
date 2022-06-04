@@ -1,5 +1,5 @@
 .titulo {
-    color: black;
+    color: white !important;
     font-family: 'Poppins', sans-serif !important;
     font-size: 4em !important;
     text-decoration: none;
@@ -7,12 +7,11 @@
 }
 
 .titulo:hover {
-    color: black;
+    color: white !important;
 }
 
 nav {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    background-color: #95b8f6;
 }
 
 .nav-link {
