@@ -12,29 +12,29 @@
             <table class="table">
                 <thead>
                 <tr>
-                    <th scope="col">Id</th>
-                    <th scope="col">Titulo</th>
-                    <th scope="col">Año de Estreno</th>
-                    <th scope="col">Genero</th>
-                    <th scope="col">Duración</th>
-                    <th scope="col">Sinopsis</th>
-                    <th scope="col">Director</th>
-                    <th scope="col">Reparto</th>
-                    <th scope="col">Editar</th>
                     <th scope="col">Eliminar</th>
+                    <th scope="col">Editar</th>
+                    <th scope="col">Reparto</th>
+                    <th scope="col">Director</th>
+                    <th scope="col">Sinopsis</th>
+                    <th scope="col">Duración</th>
+                    <th scope="col">Genero</th>
+                    <th scope="col">Año de Estreno</th>
+                    <th scope="col">Titulo</th>
+                    <th scope="col">Id</th>
                 </tr>
                 </thead>
                 <tbody>
                 {{#each result}}
                     <tr>
-                        <th scope="row" style="vertical-align: middle">{{this._id}}</th>
-                        <td>{{this.titulo}}</td>
-                        <td>{{this.anno}}</td>
-                        <td>{{this.genero}}</td>
-                        <td>{{this.duracion}}</td>
-                        <td class="text-justify">{{this.sinopsis}}</td>
-                        <td>{{this.director}}</td>
-                        <td>{{this.reparto}}</td>
+                        <td>
+                            <form action="/{{_id}}?_method=DELETE" method="POST">
+                                <input type="hidden" name="_method" value="DELETE">
+                                <button type="submit" class="btn btn-danger" name="id" value="{{this._id}}">
+                                    <i class="bi bi-trash3-fill"></i>
+                                </button>
+                            </form>
+                        </td>
                         <td>
                             <form action="" method="GET">
                                 <button type="button" class="btn btn-warning">
@@ -44,14 +44,14 @@
                                 </button>
                             </form>
                         </td>
-                        <td>
-                            <form action="/{{_id}}?_method=DELETE" method="POST">
-                                <input type="hidden" name="_method" value="DELETE">
-                                <button type="submit" class="btn btn-danger" name="id" value="{{this._id}}">
-                                    <i class="bi bi-trash3-fill"></i>
-                                </button>
-                            </form>
-                        </td>
+                        <td>{{this.reparto}}</td>
+                        <td>{{this.director}}</td>
+                        <td class="text-justify">{{this.sinopsis}}</td>
+                        <td>{{this.duracion}}</td>
+                        <td>{{this.genero}}</td>
+                        <td>{{this.anno}}</td>
+                        <td>{{this.titulo}}</td>
+                        <th scope="row" style="vertical-align: middle">{{this._id}}</th>
                     </tr>
                 {{/each}}
                 </tbody>
